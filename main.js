@@ -692,7 +692,7 @@ function main(event) {
         <div class="content">
             <div class="box">
                 <div class="imgbx">
-                    <img src="product-4.png" alt="">
+                    <img src="Images/pedigree1.png" alt="">
                 </div>
                 <div class="text">
                     Fish Delights - Wild Salmon
