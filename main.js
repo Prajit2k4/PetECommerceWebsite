@@ -692,7 +692,7 @@ function main(event) {
         <div class="content">
             <div class="box">
                 <div class="imgbx">
-                    <img src="Images/pedigree1.png" alt="">
+                    <img src="https://static.wixstatic.com/media/84770f_586451c786fb4a599c98681292d20be4~mv2_d_2635_2710_s_4_2.png/v1/fill/w_246,h_253,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_586451c786fb4a599c98681292d20be4~mv2_d_2635_2710_s_4_2.png" alt="">
                 </div>
                 <div class="text">
                     Fish Delights - Wild Salmon
@@ -706,7 +706,7 @@ function main(event) {
             </div>
             <div class="box">
                 <div class="imgbx">
-                    <img src="product-3.png" alt="">
+                    <img src="https://static.wixstatic.com/media/84770f_b7850d79542a400a8058ca3b7d1fb51b~mv2_d_2635_2710_s_4_2.png/v1/fill/w_246,h_253,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b7850d79542a400a8058ca3b7d1fb51b~mv2_d_2635_2710_s_4_2.png" alt="">
                 </div>
                 <div class="text">
                     Fresh Delights - Lamb
@@ -720,7 +720,7 @@ function main(event) {
             </div>
             <div class="box">
                 <div class="imgbx">
-                    <img src="product-4.png" alt="">
+                    <img src="https://static.wixstatic.com/media/84770f_b29b9b581f7743aa9b5aafd7c2f8398c~mv2_d_2635_2710_s_4_2.png/v1/fill/w_246,h_253,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b29b9b581f7743aa9b5aafd7c2f8398c~mv2_d_2635_2710_s_4_2.png" alt="">
                 </div>
                 <div class="text">
                     Meat Delights - Chicken & Beef
