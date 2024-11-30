@@ -1,0 +1,42 @@
+{
+  "name": "PetECommerceWebsite",
+  "bucket": "",
+  "preset": "javascript",
+  "env": "production",
+  "prefix": "20241130064459",
+  "not-first-run": true,
+  "function": {
+    "id": 33032,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 31769,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 191391
+  },
+  "application": {
+    "id": 1732941174,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1732946886,
+    "name": "PetECommerceWebsite",
+    "domain_name": "z1lptr0lkw.map.azionedge.net",
+    "url": "https://z1lptr0lkw.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 328860,
+        "name": "Execute Edge Function",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
