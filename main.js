@@ -20,22 +20,247 @@ function main(event) {
   }
    
   return new Response(`
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Hello World</title>
-      <script>
-        ${htmx}
-      </script>
-    </head>
-    <body>
-      <h1>Hello World</h1>
-      <button hx-get="/messages" hx-target="#message">Load Message</button>
-      <p id="message"></p>
-    </body>
-    </html>
+   ml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop e Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">FURRY FRIENDS</div>
+        <ul class="navigation">
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#shop">SHOP</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#review">REVIEWS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars on" id="on"></i>
+        </div>
+        <div class="alert">
+                <ul class="navigation1">
+                    <i class='bx bxs-x-circle close'></i>
+                    <li><a href="#banner" class="out">HOME</a></li>
+                    <li><a href="#shop" class="out">SHOP</a></li>
+                    <li><a href="#about" class="out">ABOUT</a></li>
+                    <li><a href="#review" class="out">REVIEWS</a></li>
+                    <li><a href="#contact" class="out">CONTACT</a></li>
+                </ul>
+            </i>
+        </div>
+    </header>
+
+    <!--Home Section-->
+    <section class="banner" id="banner">
+
+        <div class="title">
+            <h1><i>YOUR BEST FRIEND<br>DESERVES THE<br>BEST MEAL</i></h1>
+        </div>
+        <a href="" class="btn">SHOP NOW</a>
+    </section>
+
+    <!--Shop Section-->
+
+    <section class="shop" id="shop">
+        <div class="title">
+            <h2 class="titetext">LATEST PRODUCTS</h2>
+            <p>Discover the perfect blend of quality and flavor with our premium dog food — because your pet deserves the best!</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="product-4.png" alt="">
+                </div>
+                <div class="text">
+                    Fish Delights - Wild Salmon
+                </div>
+                <div class="price">
+                    <b>₹225.00</b>
+                </div>
+                <div class="imgbtn">
+                    <a href="" class="btn1">Buy Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="product-3.png" alt="">
+                </div>
+                <div class="text">
+                    Fresh Delights - Lamb
+                </div>
+                <div class="price">
+                    <b>₹225.00</b>
+                </div>
+                <div class="imgbtn">
+                    <a href="" class="btn1">Buy Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="product-4.png" alt="">
+                </div>
+                <div class="text">
+                    Meat Delights - Chicken & Beef
+                </div>
+                <div class="price">
+                    <b>₹225.00</b>
+                </div>
+                <div class="imgbtn">
+                    <a href="" class="btn1">Buy Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="https://static.wixstatic.com/media/84770f_b29b9b581f7743aa9b5aafd7c2f8398c~mv2_d_2635_2710_s_4_2.png/v1/fill/w_246,h_253,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_b29b9b581f7743aa9b5aafd7c2f8398c~mv2_d_2635_2710_s_4_2.png" alt="">
+                </div>
+                <div class="text">
+                    Veg Delights - Potato & Spinach
+                </div>
+                <div class="price">
+                    <b>₹225.00</b>
+                </div>
+                <div class="imgbtn">
+                    <a href="" class="btn1">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="sall">-SHOP WITH US-</a>
+    </section>
+
+    <!--About Section-->
+
+    <section class="about" id="about">
+        <div class="title">
+            <h2 class="titetext">ABOUT US</h2>
+        </div>
+        <div class="imgtext">
+            <img src="https://i.postimg.cc/G2v0JHVQ/pexels-blue-bird-7210284.jpg" alt="">
+            <div class="info">
+                <div class="infocontent">
+                    <h3>NATURAL <br>INGREDIENTS</h3>
+                    <p>"Nourish your pet with the power of nature — made with fresh, natural ingredients for a healthier, happier life"</p>
+                </div>
+                <div class="infocontent">
+                    <h3>100% HOME MADE</h3>
+                    <p>"Homemade with love — our dog food is crafted with care, using only the finest ingredients from our kitchen to your pet's bowl"</p>
+                </div>
+                <div class="infocontent">
+                    <h3>SOURCED IN INDIA</h3>
+                    <p>"Proudly sourced in the INDIA — we ensure top-quality, responsibly sourced ingredients for your furry friend's meals"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Reviews Section-->
+
+    <section class="review" id="review">
+        <div class="title">
+            <h2 class="titetext">DOGGO REVIEWS</h2>
+            <p>“ Dogs do speak, but only to those who know how to listen. ”</p>
+        </div>
+        <div class="container">
+                <div class="cbox1 bbox">
+                    <img src="https://i.postimg.cc/HxdpGL8T/pexels-yaroslav-shuraev-8499233.jpg" alt="">
+                </div>
+                <div class="cbox2 bbox">
+                    <h1>OUR HAPPY CUSTOMERS</h1>
+                </div>
+                <div class="cbox3 bbox">
+                    <img src="https://i.postimg.cc/pX9sHJHL/pexels-ad-thiry-13270038.jpg" alt="">
+                </div>
+                <div class="cbox4 bbox">
+                    <div class="boxdetail">
+                        <h1>COOKIE</h1>
+                        <p> My human started feeding me this food a while ago, and I can’t get enough of it! It tastes soooo good, and I finish my bowl every time. My coat is shinier, and I have tons of energy to play all day long! It’s the best food ever!</p>
+                    </div>
+                </div>
+                <div class="cbox5 bbox">
+                    <div class="boxdetail">
+                    <h1>JACKSON</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, voluptatem amet? Omnis exercitationem esse quos, voluptate praesentium minus est voluptas tenetur iusto nulla tempore consequuntur, natus dicta repellat officiis dolor!</p>
+                    </div>
+                </div>
+                <div class="cbox6 bbox">
+                    <img src="https://i.postimg.cc/j2ymRHp9/pexels-barnabas-davoti-14172889.jpg" alt="">
+                </div>
+                <div class="cbox7 bbox">
+                    <div class="boxdetail">
+                    <h1>BOLT</h1>
+                    <p>I just tried Barky Bites Gourmet Chicken Feast—it’s pawsome! 🐶🍖 Crunchy, juicy, and oh-so-chickeny. My tail wagged non-stop, and I’ve got energy for days! 🐕✨ Five paws up! </p>
+                    </div>
+                </div>
+                <div class="cbox58 bbox">
+                    <img src="https://i.postimg.cc/sXbCjDvB/pexels-apunto-group-agencia-de-publicidad-7752793.jpg" alt="">
+                </div>
+        </div>
+    </section>
+
+    <!--Reviews Section-->
+
+    <section class="contact" id="contact">
+        <div class="footer">
+            <div class="links">
+                <ul class="navigation">
+                    <li><a href="#banner" class="out">HOME</a></li>
+                    <li><a href="#shop" class="out">SHOP</a></li>
+                    <li><a href="#about" class="out">ABOUT</a></li>
+                    <li><a href="#reviews" class="out">REVIEWS</a></li>
+                    <li><a href="#contact" class="out">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <h1>INFORMATION</h1>
+                <p>Transparency is key — our dog food is made with carefully selected ingredients, and we provide all the information you need about where each component comes from, how it's processed, and why it’s perfect for your pet’s health. Trust us to deliver high-quality nutrition in every meal.</p>
+            </div>
+            <div class="cs">
+                <h1>CUSTOMER SERVICE</h1>
+                <ul>
+                    <li>+91-983-051-2554</li>
+                    <li>Kolkata, West bengal, 700132</li>
+                    <li>FurryFriends@gmail.com</li>
+                </ul>
+            </div>
+            <div class="slinks">
+                <h1>FOLLOW US</h1>
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/prajit-kotal-0707112b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/Prajit2k4" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/prajit__k?igsh=MWg0bjV4a24zbTdzdg==" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Form-->
+
+    <section class="form">
+        <h1>JOIN OUR FURRY COMMUNITY</h1>
+        <input type="email" placeholder="Enter your email here">
+        <button>JOIN US</button>
+    </section>
+
+    <section class="strip">
+        <h1>Designed and coded by Prajit</h1>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/prajit-kotal-0707112b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/Prajit2k4" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/prajit__k?igsh=MWg0bjV4a24zbTdzdg==" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
   `, {
     headers: {
       'Content-Type': 'text/html; charset=utf-8'
